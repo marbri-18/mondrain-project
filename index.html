@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mondrian Project</title>
+  <style>
+    /* 
+    Write your CSS here 
+    Gap Colour: #000
+    White: #F0F1EC
+    Red: #E72F24
+    Black: #232629
+    Blue: #004592
+    Yellow: #F9D01E
+
+    For dimensions, see dimensions.png image.
+    HINT: Remember you can't change the properties of grid lines.
+    But grid lines are transparent!
+    */
+    .outer-container{
+      width: 750px;
+      height:750px;
+      border: 20px solid brown;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    } 
+
+    .container {
+      width: 748px;
+      height: 748px;
+      background-color: #000;
+      display: grid;
+      grid-template-columns: 320px 9px 198px 9px 153px 9px 50px;
+      grid-template-rows: 414px 9px 130px 10px 155px 9px 20px;
+      
+    }
+
+    .top-row-red {
+      background-color: #E72F24;
+      width: 320px;
+      height: 414px;
+    
+    }
+
+    .top-row-white {
+      background-color: #F0F1EC;
+      width: 419px;
+      height: 414px;
+      grid-column: 3 / 8;
+    }
+
+    .middle-row-left-white {
+      background-color: #F0F1EC;
+      height: 295px;
+      width: 320px;
+      grid-column: 1 / 2;
+      grid-row: 3 / 4;
+    }
+
+    .middle-row-centre-white{
+      background-color: #F0F1EC;
+      height: 295px;
+      width: 360px;
+      grid-column: 3 / 6;
+      grid-row: 3 / 4;
+    }
+
+    .middle-row-right-blue {
+      background-color: #004592;
+      height: 130px;
+      width: 50px;
+      grid-column: 7 / 8;
+      grid-row: 3 / 4;
+    }
+
+    .middle-row-right-white {
+      background-color: #F0F1EC;
+      height: 185px;
+      width: 50px;
+      grid-column: 7 / 8;
+      grid-row: 5 / 8;
+    }
+
+    .bottom-row-left-white {
+      background-color: #F0F1EC;
+      height: 21px;
+      width: 320px;
+      grid-column: 1 / 2;
+      grid-row: 7 / 8;
+    }
+
+    .bottom-row-yellow-centre {
+      background-color: #F9D01E;
+      height: 21px;
+      width: 198px;
+      grid-column: 3 / 4;
+      grid-row: 7 / 8;
+    }
+
+  </style>
+</head>
+
+<body>
+  <!-- Write your HTML here -->
+  <div class="outer-container">
+    <div class="container">
+      <div class="top-row-red"></div>
+      <div class="top-row-white"></div>
+      <div class="middle-row-left-white"></div>
+      <div class="middle-row-centre-white"></div>
+      <div class="middle-row-right-blue"></div>
+      <div class="middle-row-right-white"></div>
+      <div class="bottom-row-left-white"></div>
+      <div class="bottom-row-yellow-centre"></div>
+      
+     
+
+    </div>
+  </div>
+</body>
+
+</html>
